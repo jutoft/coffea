@@ -93,7 +93,7 @@ class Plotter(Analyzer):
         plt.axis('off')
        
         try:
-            positions = nx.graphviz_layout(self.graph)
+            positions = nx.nx_agraph.graphviz_layout(self.graph)
         except ImportError as err:
             log.info('Graphviz not available: error=%s', err)
             log.info('Falling back to spring layout...')

@@ -127,7 +127,7 @@ if __name__ == '__main__':
         sys.exit(2)
 
     def print_result_callback(path): 
-        print path
+        print(path)
 
     with JavaScanner(print_result_callback) as scanner:
         scanner.scan(target_path)

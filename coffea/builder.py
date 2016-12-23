@@ -21,8 +21,8 @@ import logging
 import os
 import sys
 
-from java.java_class import JavaClass
-from java.java_scanner import JavaScanner 
+from coffea.java.java_class import JavaClass
+from coffea.java.java_scanner import JavaScanner 
 
 from model import Model, Node
 
