@@ -89,7 +89,10 @@ class Plotter(Analyzer):
     def plot(self, **kwargs):
         """Plots the underlying graph."""
 
-        plt.figure(facecolor='#fefefe', dpi=80, frameon=True) 
+        if 'size' in kwargs:
+            plt.figure(facecolor='#fefefe', figsize=(kwargs['size'], kwargs['size']), frameon=True) 
+        else:
+            plt.figure(facecolor='#fefefe', frameon=True) 
         plt.axis('off')
        
         try:
